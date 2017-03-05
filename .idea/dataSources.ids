@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - gas_consumption@localhost" uuid="95873a24-00bf-4ea1-bcde-0b5bbad40b0d">
+    <database-info product="MySQL" version="5.7.15" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="upper"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.5">
+      <schema id="1" name="gas_consumption"/>
+      <table id="2" parent="1" name="fill_up"/>
+      <table id="3" parent="1" name="gas_grade"/>
+      <column id="4" parent="2" name="fill_up_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="5" parent="2" name="fill_up_date">
+        <data-type>date</data-type>
+      </column>
+      <column id="6" parent="2" name="fill_up_gas_amount">
+        <mandatory>1</mandatory>
+        <data-type>decimal(5,3)</data-type>
+      </column>
+      <column id="7" parent="2" name="fill_up_price_pg">
+        <data-type>decimal(3,2)</data-type>
+      </column>
+      <column id="8" parent="2" name="fill_up_grade">
+        <data-type>int(11)</data-type>
+      </column>
+      <index id="9" parent="2" name="fill_up_gas_grade_fk_idx">
+        <columns>fill_up_grade</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="10" parent="2" name="PRIMARY">
+        <columns>fill_up_id</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="11" parent="2" name="fill_up_gas_grade_fk">
+        <columns>fill_up_grade</columns>
+        <ref-key>~.gas_grade.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="12" parent="3" name="gas_grade_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="13" parent="3" name="gas_grade_name">
+        <data-type>varchar(45)</data-type>
+      </column>
+      <key id="14" parent="3" name="PRIMARY">
+        <columns>gas_grade_id</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>
