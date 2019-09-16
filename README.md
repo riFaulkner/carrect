@@ -10,30 +10,23 @@ The App will allow the user to track gas usage over time and save it to a databa
 
 Frontend:
 
-	React.js *
-	JSX 
+	Vue.js
 	HTML
 	CSS
   
   
 Backend: 
-  * Spring REST *
-  * Hibernate *
+  * Spring REST 
+  * Hibernate 
   * mySQL
   * Gradle
-  * JUnit *
+  * JUnit 
   
   
 Dev Ops:
-  * Docker *
-  * Amazon Web Services * 
-  * Travis CI?
+  * Docker 
+  * Digital Ocean 
+  * Circl CI
   
 Misc.:
-  
-  
-Legend
-
-  '*' - Indicates a high priority tech
-	
-  ? - Indicates a low priority tech
+ 
