@@ -123,21 +123,21 @@
           }
         } },
         computed: {
-           cars: function () {
-             const cars = [];
-             for (const car of this.$store.state.userCars){
-               cars.push({value:car.id, text: car.year + " " + car.make + " " + car.model  } );
-             }
-             return cars;
-           },
-           selectedCar: function () {
-              return this.$store.getters.getCarInfo(this.form.car);
-           },
-           preferredFuelGrade: function () {
-              return this.selectedCar.preferredFuelGrade;
-           }
-
-        },
+          cars: function () {
+            const cars = [];
+            for (const car of this.$store.state.userCars) {
+              cars.push({value: car.id, text: car.year + " " + car.make + " " + car.model});
+            }
+            return cars;
+          },
+          selectedCar: function () {
+            return this.$store.getters.getCarInfo(this.form.car);
+          },
+          preferredFuelGrade: function () {
+            return this.selectedCar.preferredFuelGrade;
+          }
+        }
+        ,
         methods: {
           submit: function (event) {
             console.log("Submit event fired!");

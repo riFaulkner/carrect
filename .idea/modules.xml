@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gas-consumption.iml" filepath="$PROJECT_DIR$/.idea/modules/gas-consumption.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gas-consumption_main.iml" filepath="$PROJECT_DIR$/.idea/modules/gas-consumption_main.iml" group="gas-consumption" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gas-consumption_test.iml" filepath="$PROJECT_DIR$/.idea/modules/gas-consumption_test.iml" group="gas-consumption" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/carrect.iml" filepath="$PROJECT_DIR$/.idea/modules/carrect.iml" group="carrect" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/carrect.main.iml" filepath="$PROJECT_DIR$/.idea/modules/carrect.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/carrect.test.iml" filepath="$PROJECT_DIR$/.idea/modules/carrect.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.rifaulkner.carrect.iml" filepath="$PROJECT_DIR$/.idea/modules/com.rifaulkner.carrect.iml" />
     </modules>
   </component>
 </project>
